@@ -1,4 +1,4 @@
-package entities;
+package sistema_escolar;
 
 public class Alune extends Pessoa {
 	
@@ -29,13 +29,4 @@ public class Alune extends Pessoa {
 	public void setCurso(Curso curso) {
 		this.curso = curso;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
