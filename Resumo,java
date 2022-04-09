@@ -1,0 +1,35 @@
+//Resumo Inicial Teórico do Projeto Java - Sistema Escolar gabi 
+
+Resumo Classes: Aluno, Professor, Curso e Pessoa.
+Super Classe: Pessoa, pois aluno e professor herdam da classe pessoa.
+
+Classes: 
+Aluno: Mesmos atributos de Pessoas + atributos específicos da classe aluno.
+
+Curso: Classe ()
+  
+Pessoa: 
+Super Classe ou entidade, pois as demais classes como professor e aluno herdam dela.
+
+Professor: Mesmos atributos da pessoa + atributos específicos da classe professor.
+
+Exemplo:
+
+public class Aluno extends Pessoa {
+
+O aluno herda a super classe Pessoa, mas tembém tem atributos específicos do aluno, como:
+
+  public Aluno(String nome, int idade, String cpf, Curso curso) {
+        super(nome, idade, cpf);
+
+
+Assim como a classe Professor:
+
+public class Professor extends Pessoa {
+
+    private double salario;
+
+    public Professor(String nome, int idade, String cpf, double salario) {
+        super(nome, idade, cpf);
+        this.salario = salario;
+    }
