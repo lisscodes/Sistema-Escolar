@@ -6,5 +6,5 @@
 </P>
 
 </p>
-      Projeto desenvolvido em linguagem de programação JAVA, para a conclusão do primeiro módulo do Bootcamp para pessoa desenvolvedora Java Full Stack da <a href="https://brazil.generation.org/">Generation Brasil</a>.
+      Projeto desenvolvido em linguagem de programação JAVA para a conclusão do primeiro módulo do Bootcamp para pessoa desenvolvedora Java Full Stack da <a href="https://brazil.generation.org/">Generation Brasil</a>.
 </p>
