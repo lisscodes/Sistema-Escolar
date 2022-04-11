@@ -2,9 +2,9 @@ package sistema_escolar;
 
 public class Pessoa {
 	
-    private String nome;
-    private int idade;
-    private String cpf;
+    protected String nome = " ";
+    protected int idade = 0;
+    protected String cpf = " ";
 	
     public Pessoa(String nome, int idade, String cpf) {
 		super();
@@ -35,6 +35,11 @@ public class Pessoa {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	@Override
+	public String toString() {
+		return "Nome: " + nome + "\nIdade: " + idade + "\nCPF: " + cpf;
 	}
     
 }

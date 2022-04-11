@@ -3,15 +3,13 @@ package sistema_escolar;
 public class Curso {
 
 	private String nomeCurso;
-	private int turma;
-	private long matricula;
+
 	
 	
-	public Curso(String nomeCurso,int turma,long matricula)
+	public Curso(String nomeCurso)
 	{
 		this.nomeCurso = nomeCurso;
-		this.turma = turma;
-		this.matricula = matricula;
+		
 	}
 
 
@@ -25,23 +23,10 @@ public class Curso {
 	}
 
 
-	public int getTurma() {
-		return turma;
-	}
 
-
-	public void setTurma(int turma) {
-		this.turma = turma;
-	}
-
-
-	public long getMatricula() {
-		return matricula;
-	}
-
-
-	public void setMatricula(long matricula) {
-		this.matricula = matricula;
+	@Override
+	public String toString() {
+		return "\nCurso: " + nomeCurso;
 	}
 	
 	

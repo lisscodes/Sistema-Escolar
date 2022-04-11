@@ -12,20 +12,18 @@ public class Professor extends Pessoa{
 		
 	}
 	
-	@Override
-	public String toString() {
-		return "Professor[" +
-				super.toString() +
-				"SALÁRIO = R$ " + salario +
-				"]";					
-	}
-
 	public double getSalario() {
 		return salario;
 	}
 
 	public void setSalario(double salario) {
 		this.salario = salario;
+	}
+
+	@Override
+	public String toString() {
+		return "INFORMAÇÕES DE DOCENTES\n" + super.toString() +
+				"\nSALÁRIO = R$ " + salario;					
 	}
 
 }
