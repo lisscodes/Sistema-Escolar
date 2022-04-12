@@ -1,20 +1,38 @@
-package sistema_escolar;
+package arquivo;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import sistema_escolar.BancoDados;
+import sistema_escolar.Pessoa;
 
-import arquivo.listaAlunes;
+public class listaAlunes implements BancoDados{
 
-public class Programa {
+	@Override
+	public void inserirAlune(Pessoa pessoa) {
+		// TODO Auto-generated method stub
+		
+	}
 
-    public static void main(String[] args) {
-    
-    	int op;
+	@Override
+	public Pessoa procurarAlune(String cpf) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void removerAlune(String cpf) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void menuCoordenação()
+	{
+		int op;
 		Scanner leia = new Scanner(System.in);
 		
 		ArrayList<String> nome = new ArrayList();
 		ArrayList<String> cpf = new ArrayList();
-		System.out.println("\t\tSISTEMA ESCOLAR DEEEEEELAAAAXXXXX");
+		
 		do
 		{
 			System.out.println("\n============================================");
@@ -88,7 +106,30 @@ public class Programa {
 				}
 			}
 		}while(op !=0);
-    	leia.close();
-    }		
+		
+	}
+	
+	public void consultaAlune() {
+		// TODO Auto-generated method stub
+		ArrayList<String> nome = new ArrayList();
+		ArrayList<String> cpf = new ArrayList();
+		Scanner leia = new Scanner(System.in);
+		leia.nextLine();
+		System.out.print("\nDigite o nome do alune: ");
+		String consultaNome = leia.nextLine();
+		System.out.print("\nDigite o cpf do alune: ");
+		String consultaCpf = leia.nextLine();
+		if(nome.contains(consultaNome) && cpf.contains(consultaCpf))
+		{
+			System.out.println("\nAlune encontrado!!");
+			
+		}
+		else
+		{
+			System.out.println("\nAlune não existente...");
+		}
+	}
+
 }
+
 

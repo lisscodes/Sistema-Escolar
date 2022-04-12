@@ -6,8 +6,8 @@ public class Alune extends Pessoa {
 	private int turma = 0;
 	private Curso curso;
 	
-	public Alune(String nome, int idade, String cpf, long matricula, int turma, Curso curso) {
-		super(nome, idade, cpf);
+	public Alune(String nome, String cpf, long matricula, int turma, Curso curso) {
+		super(nome, cpf);
 		this.matricula = matricula;
 		this.turma = turma;
 		this.curso = curso;

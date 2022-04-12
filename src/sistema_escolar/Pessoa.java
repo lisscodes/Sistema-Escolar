@@ -3,13 +3,11 @@ package sistema_escolar;
 public class Pessoa {
 	
     protected String nome = " ";
-    protected int idade = 0;
     protected String cpf = " ";
 	
-    public Pessoa(String nome, int idade, String cpf) {
+    public Pessoa(String nome, String cpf) {
 		super();
 		this.nome = nome;
-		this.idade = idade;
 		this.cpf = cpf;
 	}
 
@@ -19,14 +17,6 @@ public class Pessoa {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public int getIdade() {
-		return idade;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
 	}
 
 	public String getCpf() {
@@ -39,7 +29,7 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Nome: " + nome + "\nIdade: " + idade + "\nCPF: " + cpf;
+		return "Nome: " + nome + "\nCPF: " + cpf;
 	}
     
 }
