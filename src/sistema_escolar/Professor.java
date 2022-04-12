@@ -23,7 +23,7 @@ public class Professor extends Pessoa{
 	@Override
 	public String toString() {
 		return "INFORMAÇÕES DE DOCENTES\n" + super.toString() +
-				"\nSALÁRIO = R$ " + salario;					
+				"\nSALÁRIO = R$ " + salario + "\n";					
 	}
 
 }

@@ -1,26 +1,34 @@
 package sistema_escolar;
 
 import java.util.ArrayList;
+
 import java.util.Scanner;
 
-import arquivo.listaAlunes;
 
 public class Programa {
 
     public static void main(String[] args) {
-    
+    	
+    	
     	int op;
 		Scanner leia = new Scanner(System.in);
-		
+		Professor prof1 = new Professor("Luís Guerreiro", "***********", 32.893);
+		Professor prof2 = new Professor("Kelly Knoblauch", "**********", 50.893);
+		Curso curso1 = new Curso("Pessoa desenvolvedore WEB JAVA full stack");
+		Curso curso2 = new Curso("Pessoa desenvolvedore .NET");
 		ArrayList<String> nome = new ArrayList();
 		ArrayList<String> cpf = new ArrayList();
-		System.out.println("\t\tSISTEMA ESCOLAR DEEEEEELAAAAXXXXX");
+		
+		
+		System.out.println("\n\tSISTEMA ESCOLAR DELAAX");
 		do
 		{
-			System.out.println("\n============================================");
+			System.out.println("\n================================================");
 			System.out.println("\n[1] Inserir alunes\t[2] Remover alunes");
-			System.out.println("\n[3] Procurar alunes\t[4] Lista de alunes\n\n[0] Finalizar o sistema");
-			System.out.println("\n============================================");
+			System.out.println("\n[3] Procurar alunes\t[4] Lista de alunes");
+			System.out.println("\n[5] Infos Professore\t[6] Infos Curso");
+			System.out.println("\n[0] Finalizar o sistema");
+			System.out.println("\n================================================");
 			System.out.print("\nDigite uma opção: ");
 			op = leia.nextInt();
 			
@@ -77,8 +85,16 @@ public class Programa {
 				System.out.println(nome);
 				System.out.println(cpf);
 				break;
+			case 5:
+				System.out.println(prof1.toString()); 
+				System.out.println(prof2.toString()); 
+					break;
+			case 6:
+				System.out.println(curso1.toString());
+				System.out.println(curso2.toString());
+					break;
 			default:
-				if(op<0 || op>4)
+				if(op<0 || op>6)
 				{
 					System.out.println("\nOpção errada... Digite uma nova opção...");
 				}
