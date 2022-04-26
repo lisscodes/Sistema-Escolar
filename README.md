@@ -14,7 +14,7 @@
 </p>
 
 ## Resumo do projeto
-Projeto em andamento realizado por integrantes do time da Generation Brasil - turma 51 Recife. Nesse projeto, praticamos a linguagem Java e os conceitos do paradigma de orientação a objetos.
+Nesse projeto, praticamos a linguagem Java e os conceitos do paradigma de orientação a objetos com o objetivo de construir um sistema escolar que seja capaz de cadastrar alunes para que seus dados sejam manipuláveis através da biblioteca Java arrayList. Professores podem ter seus dados manipulados também, mas precisam serem pré cadastrados por alguém com acesso ao sistema.  
 
 ## Funcionalidades do projeto
 
